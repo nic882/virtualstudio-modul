@@ -5,8 +5,6 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-
-
 header {
   background-color: #787878;
   color: #fff;
@@ -65,7 +63,7 @@ nav ul li a:hover {
   }
 }
 
-/* Kontaktformular Stile */
+/*Kontaktformular*/
 :root {
   --bg: #f5f7fb;
   --card: #ffffff;
@@ -75,8 +73,19 @@ nav ul li a:hover {
 }
 
 body {
-  background-color: var(--bg);
+  background-image: url("../Bilder/kaisi.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   color: var(--text);
+}
+
+.hintergrund {
+  width: 100%;
+  height: 400px;
+  background-image: url("../Bilder/kaisi.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .contact-container {
@@ -115,7 +124,9 @@ body {
   background: #fff;
   font-size: 1rem;
   color: var(--text);
-  transition: box-shadow 0.12s ease, border-color 0.12s ease;
+  transition:
+    box-shadow 0.12s ease,
+    border-color 0.12s ease;
 }
 
 .contact-form input:focus,
@@ -125,7 +136,10 @@ body {
   box-shadow: 0 6px 20px rgba(74, 144, 226, 0.12);
 }
 
-.contact-form textarea { resize: vertical; min-height: 140px; }
+.contact-form textarea {
+  resize: vertical;
+  min-height: 140px;
+}
 
 .btn-send {
   display: inline-block;
@@ -138,26 +152,15 @@ body {
   cursor: pointer;
   font-weight: 700;
   box-shadow: 0 8px 22px rgba(47, 123, 220, 0.18);
-  transition: transform 0.08s ease, box-shadow 0.12s ease;
+  transition:
+    transform 0.08s ease,
+    box-shadow 0.12s ease;
 }
 
-/* Footer styles */
-.site-footer {
-  background: #f8f9fb;
-  border-top: 1px solid #e6edf5;
-  padding: 12px 0;
-  margin-top: 28px;
+
+footer{
+  background-color: #787878;
+  color: #fff;
   text-align: center;
+  padding: 15px 0;
 }
-.footer-container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.site-footer p {
-  color: var(--muted);
-  font-size: 0.95rem;
-  margin: 0;
-}
-
-

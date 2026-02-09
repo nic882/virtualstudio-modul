@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nic's Kontakt</title>
+    <link rel="stylesheet" href="../Frontend/CSS.css" />
+  </head>
+  <header>
+    <div class="header-container">
+      <div class="Header-titel">Kontakt</div>
+
+      <nav>
+        <nav>
+          <ul>
+            <li><a href="../Backend/Index.html">Home</a></li>
+            <li><a href="../Backend/Kontakt.html">Kontakt</a></li>
+            <li><a href="../Backend/Lebenslauf.html">Lebenslauf</a></li>
+            <li><a href="../Backend/Über_mich.html">Steckbrief</a></li>
+          </ul>
+        </nav>
+      </nav>
+    </div>
+  </header>
+  <body>
+    <main class="contact-container">
+      <h1>Umfassendes Formular</h1>
+
+      <form
+        id="comprehensive-form"
+        class="contact-form"
+        method="post"
+        action="https://gibm.becknet.ch/formular/formular.php"
+      >
+        <label for="name">Name (Text, erforderlich, 2-50 Zeichen)</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          minlength="2"
+          maxlength="50"
+          placeholder="Dein voller Name"
+          autofocus
+        />
+
+        <label for="email">E-Mail (erforderlich)</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="name@example.com"
+        />
+
+        <label for="password"
+          >Passwort (erforderlich, min 8 Zeichen, mit Groß-, Kleinbuchstabe und
+          Zahl)</label
+        >
+        <input
+          type="password"
+          id="password"
+          name="password"
+          required
+          minlength="8"
+          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+          placeholder="Sicheres Passwort"
+        />
+
+        <label for="age">Alter</label>
+        <input
+          type="number"
+          id="age"
+          name="age"
+          min="18"
+          max="100"
+          value="25"
+        />
+
+        <label for="birthday">Geburtstag</label>
+        <input type="date" id="birthday" name="birthday" required />
+
+        <label for="phone">Telefon</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+          placeholder="123-456-7890"
+        />
+
+        <label for="country">Land</label>
+        <select id="country" name="country" required>
+          <option value="">Wähle ein Land</option>
+          <option value="ch">Schweiz</option>
+          <option value="de">Deutschland</option>
+          <option value="at">Österreich</option>
+          <option value="us">USA</option>
+        </select>
+
+        <fieldset>
+          <legend>Geschlecht</legend>
+          <label
+            ><input type="radio" name="gender" value="male" required />
+            Männlich</label
+          >
+          <label
+            ><input type="radio" name="gender" value="female" /> Weiblich</label
+          >
+          <label
+            ><input type="radio" name="gender" value="other" /> Andere</label
+          >
+        </fieldset>
+
+        <fieldset>
+          <legend>Interessen</legend>
+          <label
+            ><input type="checkbox" name="interests" value="sports" />
+            Sport</label
+          >
+          <label
+            ><input type="checkbox" name="interests" value="music" />
+            Musik</label
+          >
+          <label
+            ><input type="checkbox" name="interests" value="tech" />
+            Technologie</label
+          >
+          <label
+            ><input type="checkbox" name="interests" value="art" /> Kunst</label
+          >
+        </fieldset>
+
+        <label for="message">Nachricht</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="6"
+          maxlength="500"
+          placeholder="Schreibe deine Nachricht hier, Max. 500 Zeichen..."
+        ></textarea>
+
+        <label for="file">Datei hochladen</label>
+        <input type="file" id="file" name="file" />
+
+        <button type="submit" class="btn-send">Senden</button>
+      </form>
+    </main>
+  </body>
+  <footer class="site-footer">
+    <div class="footer-container">
+      <p>© 2026 Nic Heller — Alle Rechte vorbehalten.</p>
+    </div>
+  </footer>
+</html>
