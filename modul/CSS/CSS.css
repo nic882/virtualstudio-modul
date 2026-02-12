@@ -80,14 +80,6 @@ body {
   color: var(--text);
 }
 
-.hintergrund {
-  width: 100%;
-  height: 400px;
-  background-image: url("../Bilder/kaisi.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
 .contact-container {
   max-width: 720px;
   margin: 48px auto;
@@ -157,8 +149,7 @@ body {
     box-shadow 0.12s ease;
 }
 
-
-footer{
+footer {
   background-color: #787878;
   color: #fff;
   text-align: center;
