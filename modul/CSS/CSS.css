@@ -73,7 +73,7 @@ nav ul li a:hover {
 }
 
 body {
-  background-image: url("../Bilder/kaisi.jpg");
+  background-image: url("../Bilder/kaisi4.avif");
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -155,3 +155,27 @@ footer {
   text-align: center;
   padding: 15px 0;
 }
+
+/* Galerie */
+.gallery {
+  padding: 40px 0;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gallery-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+
